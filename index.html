@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إمداد | منصة التعاقدات المستدامة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --green: #1fa98c;
+        --green-dark: #158a72;
+        --green-soft: #eaf7f3;
+        --yellow: #f6c744;
+        --yellow-dark: #e0a200;
+        --white: #ffffff;
+        --text-dark: #1f2d2a;
+        --text-muted: #6b7c78;
+        --bg-light: #f9fbfa;
+        --card-shadow: 0 20px 40px rgba(0,0,0,0.06);
+      }
+
+      body {
+        font-family: 'Cairo', sans-serif;
+        background-color: var(--bg-light);
+        color: var(--text-dark);
+        scroll-behavior: smooth;
+      }
+
+      .imdad-gradient {
+        background: linear-gradient(135deg, #1fa98c, #35c2a3);
+      }
+
+      .curve-mask {
+        clip-path: ellipse(70% 100% at 50% 100%);
+      }
+
+      .feature-card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+      }
+
+      .animate-float {
+        animation: iconFloat 3s ease-in-out infinite;
+      }
+
+      @keyframes iconFloat {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+      }
+
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom": "https://esm.sh/react-dom@^19.2.4",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
